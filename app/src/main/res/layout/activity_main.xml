@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap a color to change background, tap an animal to see picture"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:background="#F3E5F5" />
+
+    <!-- Animal Image Display -->
+    <ImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_marginVertical="20dp"
+        android:contentDescription="Animal image" />
+
+    <!-- Color Buttons Row -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Background Colors"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Red"
+            android:backgroundTint="#FF5252"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Blue"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnGreen"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Green"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnYellow"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Yellow"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- Animal Buttons Row -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animal Pictures"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+
+        <Button
+            android:id="@+id/btnCat"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="🐱 Cat"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnDog"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="🐶 Dog"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnLion"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="🦁 Lion"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnBird"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="🐦 Bird"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="RESET"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#9C27B0"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
